@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Sifonn";
+    src: url("/fonts/SIFONN_PRO.otf");
+}
+
+.main_2 {
+    background-image:
+        radial-gradient(50% 50% at 50% 50%, rgba(2, 16, 23, 0) 0%, #021017 100%),
+        url('/img_2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.main_3 {
+    background-image:
+        radial-gradient(50% 50% at 50% 50%, rgba(2, 16, 23, 0) 0%, #021017 100%),
+        url('/img_3.svg');
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    color: white;
+
+}
+
+.main_4 {
+    background-image:
+        radial-gradient(50% 50% at 50% 50%, rgba(2, 16, 23, 0) 0%, #021017 100%),
+        url('/img_4.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+    color: white;
+
+}
+
+.main_5 {
+    background-image:
+        radial-gradient(50% 50% at 50% 50%, rgba(2, 16, 23, 0) 0%, #021017 100%),
+        url('/img_5.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+    color: white;
+}
+
+/* HOver effect for anchor tags */
+.anchor {
+    position: relative;
+}
+
+.anchor::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+}
+
+.anchor:hover::before {
+    transform: scale(1);
+}
+
+/* Hover for mobile */
+.anchor-mbl::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+}
+
+.anchor-mbl:hover::before {
+    transform: scale(1);
+}
+
+
+
+/*  */
+.container::-webkit-scrollbar {
+    width: 0px;
+}
